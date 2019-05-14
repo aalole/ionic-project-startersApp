@@ -16,6 +16,11 @@ export class HomePage implements OnInit {
       console.log("Local Data");
       console.log(data);
     })
+
+    this.connect.getRemoteData().subscribe(data =>{
+      console.log("remote Data");
+      console.log(data);
+    })
     
   }
   backToDetails() {

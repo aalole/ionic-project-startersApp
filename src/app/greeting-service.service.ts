@@ -9,7 +9,10 @@ export class GreetingServiceService {
   constructor(private http: HttpClient) { }
 
   getlocalData() {
-    return this.http.get("assets/data/read.json");
+    return this.http.get("assets/data/tip.json");
 
+  }
+  getRemoteData(){
+    return this.http.get("https://quota.glitch.me/random");
   }
 }
